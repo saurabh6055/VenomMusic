@@ -1,7 +1,7 @@
 <h1 align="center">🎵 Venom Music🎵</h1>
 
 <p align="center">
-  <img src="https://envs.sh/iCT.jpg" alt="Venom Music Logo" width="600" height="150">
+  <img src="https://files.catbox.moe/jo0gi9.jpg" alt="Venom Music Logo" width="600" height="150">
 </p>
 
 <p align="center">
