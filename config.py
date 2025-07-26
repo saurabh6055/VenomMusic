@@ -7,23 +7,17 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("28199593"))
-API_HASH = getenv("b76f22d4916774d1942cb478323249e3")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("7678397965:AAG25-aahy9Ze0XBVArEExi8svQZG69-TMw")
 
-# Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("mongodb+srv://:@cluster0.mongodb.net/?retryWrites=true&w=majority", None)
-
+BOT_TOKEN = getenv("BOT_TOKEN")
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
+OWNER_ID = int(getenv("OWNER_ID", None))
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1700))
-
-# Chat id of a group for logging bot's activities
-LOG_GROUP_ID = int(getenv("-1002591123448", None))
-
-# Get this value from @MissRose_Bot on Telegram by /id
-OWNER_ID = int(getenv("7831724564", None))
-
+DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 #HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
